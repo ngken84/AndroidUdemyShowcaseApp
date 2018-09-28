@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <android.support.design.widget.BottomNavigationView
+        android:id="@+id/main_bottom_nav_view"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_alignParentBottom="true"
@@ -14,10 +15,18 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         app:menu="@menu/bottom_nav_menu">
-
-
-
     </android.support.design.widget.BottomNavigationView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/holo_orange_light"
+        android:layout_above="@+id/main_bottom_nav_view"
+        android:id="@+id/main_fragment_cont"></LinearLayout>
 
 
 </RelativeLayout>
